@@ -38,10 +38,9 @@ Uma instalação rápida e fácil sem configurações avançadas, apenas para us
 
    ```python
    import findspark
-   findspark.init()
    from pyspark.sql import SparkSession
    
-   
+   findspark.init()
    spark = SparkSession.builder.appName('LocalApp').getOrCreate()
    source = [('Fulano', 30)]
    
